@@ -1,0 +1,18 @@
+apiVersion: 0.1.0
+environments:
+  dev:
+    destination:
+      namespace: guestbook
+      server: https://api-sbg-v4-jbo-argo-clust-vjvq3t-1145410208.us-west-2.elb.amazonaws.com
+    k8sVersion: v1.10.0
+    path: dev
+kind: ksonnet.io/app
+name: guestbook-app
+registries:
+  incubator:
+    gitVersion:
+      commitSha: 422d521c05aa905df949868143b26445f5e4eda5
+      refSpec: master
+    protocol: github
+    uri: github.com/ksonnet/parts/tree/master/incubator
+version: 0.0.1
